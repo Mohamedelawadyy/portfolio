@@ -302,9 +302,13 @@ aside {
   border-radius: 10px;
   border: 1px solid var(--jet);
   display: flex;
-  gap: 5px;
+  gap: 3px;
   align-items: flex-start;
+  justify-content: space-between;
   padding: 10px;
+}
+.facts-content-box {
+  max-width: 85%;
 }
 .facts-list .facts-item .facts-icon-box img {
   width: 40px !important;
