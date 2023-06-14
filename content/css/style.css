@@ -74,7 +74,7 @@ ul {
 }
 main {
   max-width: 1200px;
-  min-width: 259px;
+  min-width: 259px !important;
   display: flex;
   justify-content: center;
   align-items: stretch;
@@ -90,6 +90,11 @@ main {
   main {
     margin-top: 60px;
     margin-bottom: 100px;
+  }
+}
+@media (max-width: 768px) {
+  main {
+    width: 95% !important;
   }
 }
 aside {
@@ -135,7 +140,7 @@ aside {
 }
 @media (max-width: 768px) {
   aside {
-    width: 100% !important;
+    width: 80% !important;
     font-size: 8px !important;
   }
 }
@@ -260,6 +265,11 @@ aside {
   padding: 0 20px;
   box-shadow: none;
   z-index: 3;
+}
+@media (max-width: 768px) {
+  .main-content ul.nav {
+    padding: 0;
+  }
 }
 .main-content ul.nav button {
   background-color: transparent;
