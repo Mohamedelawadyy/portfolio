@@ -141,21 +141,27 @@ aside {
 }
 @media (max-width: 768px) {
   aside {
-    width: 80% !important;
-    font-size: 8px !important;
+    /* width: 80% !important; */
+    font-size: 1rem !important;
   }
 }
 @media (max-width: 768px) {
   .main-content .nav .nav-item button.nav-link {
     font-size: 3vw;
-    
   }
-  .contacts-list{}
-  .contact-item__icon-box{}
+
+  .contact-item__icon-box {
+  }
+}
+.contact-list__info {
+  font-size: 1.3vw;
 }
 @media (max-width: 425px) {
   .main-content .nav .nav-item button.nav-link {
     font-size: 3vw;
+  }
+  .contact-list__info {
+   font-size: 1rem;
   }
 }
 .contacts-list {
@@ -210,13 +216,13 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 0.5rem;
   padding-bottom: 4px;
   padding-left: 7px;
 }
 .social-list li a {
   color: var(--light-gray-70);
-  font-size: 3vw;
+  font-size: 1.5em;
   border-radius: 12px;
   transition: 0.3s;
 }
