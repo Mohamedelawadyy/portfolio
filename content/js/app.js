@@ -167,3 +167,30 @@ const filterFunc = function (selectedValue) {
     }
   }
 };
+
+// function getAllRepo() {
+//   const res = fetch(
+//     "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"
+//   );
+//   const data = res.json();
+//   console.log(data);
+//   return data;
+// }
+// getAllRepo();
+const accessToken =
+  "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";
+const username = "Mohamedelawadyy";
+
+fetch(`https://api.github.com/users/${username}/repos`, {
+  headers: {
+    Authorization: `Bearer ${accessToken}`,
+  },
+})
+  .then((response) => response.json())
+  .then((data) => {
+    // Process the repository data
+    console.log(data);
+  })
+  .catch((error) => {
+    console.error("Error:", error);
+  });

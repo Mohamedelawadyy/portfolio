@@ -85,16 +85,30 @@ main {
   main {
     margin-bottom: 60px;
   }
+  .main-content {
+    width: 100% !important;
+  }
 }
 @media (min-width: 580px) {
   main {
     margin-top: 60px;
     margin-bottom: 100px;
   }
+  .main-content {
+    width: 100% !important;
+  }
 }
 @media (max-width: 768px) {
   main {
     width: 95% !important;
+  }
+  .main-content {
+    width: 100% !important;
+  }
+}
+@media (max-width: 425px) {
+  .main-content {
+    width: 100% !important;
   }
 }
 aside {
@@ -139,6 +153,7 @@ aside {
   border-radius: 8px;
   font-size: 15px;
 }
+
 @media (max-width: 768px) {
   aside {
     /* width: 80% !important; */
@@ -149,10 +164,8 @@ aside {
   .main-content .nav .nav-item button.nav-link {
     font-size: 3vw;
   }
-
-  .contact-item__icon-box {
-  }
 }
+
 .contact-list__info {
   font-size: 1.3vw;
 }
@@ -161,7 +174,7 @@ aside {
     font-size: 3vw;
   }
   .contact-list__info {
-   font-size: 1rem;
+    font-size: 1rem;
   }
 }
 .contacts-list {
@@ -342,7 +355,7 @@ aside {
   max-width: 85%;
 }
 .facts-list .facts-item .facts-icon-box img {
-  width: 40px !important;
+  width: 2rem !important;
 }
 
 .title-wrapper {
@@ -495,6 +508,15 @@ ol.timeline-list li.timeline-item {
   height: 100%;
   object-fit: cover;
   transition: var(--transition-1);
+}
+.project-img {
+  max-height: min-content;
+  height: 10rem;
+}
+@media (max-width: 425px) {
+  .project-img {
+    height: 100%;
+  }
 }
 
 .project-item > a:hover img {
